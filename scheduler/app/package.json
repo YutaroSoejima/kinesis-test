@@ -1,0 +1,15 @@
+{
+  "name": "scheduler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "agenda": "^0.9.0",
+    "aws-sdk": "^2.6.3"
+  }
+}

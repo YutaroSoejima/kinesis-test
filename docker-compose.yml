@@ -1,0 +1,14 @@
+version: '2'
+services:
+  kinesalite:
+    build: ./kinesalite
+    ports:
+      - 4567:4567
+  scheduler:
+    build: ./scheduler
+    depends_on:
+      - kinesalite
+  mongo:
+    image: mongo:3.2.8
+    ports:
+      - 27017:27017
